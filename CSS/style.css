@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: #262626;
+  z-index: 12;
+  position: fixed;
+}
+.nav-links-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+li,
+a {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  list-style: none;
+  text-transform: uppercase;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease 0s;
+}
+a:hover::after {
+  width: 100%;
+}
+
+.nav-links,
+li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.headings {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(139, 139, 139, 0.575),
+      rgba(139, 139, 139, 0.575)
+    ),
+    url("/images/pexels-eberhard-grossgasteiger-1292115.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.txt-inline {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.txt-inline h1 {
+  font-size: 70px;
+  margin-top: 20px;
+  color: white;
+}
+
+.txt-inline p {
+  font-size: 17px;
+  color: white;
+}
+
+/* about */
+.about {
+  min-height: 88vh;
+}
+
+.about {
+  width: 100%;
+  background: linear-gradient(rgba(54, 54, 54, 0.575), rgba(54, 54, 54, 0.575)),
+    url("/images/pexels-eberhard-grossgasteiger-1292115.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+.about p {
+  font-size: 17px;
+  color: white;
+}
+.txt-line {
+  text-align: center;
+  padding-top: 200px;
+  padding-right: 500px;
+}
+img {
+  width: 20%;
+  float: right;
+  margin-right: 150px;
+  margin-top: 60px;
+}
